@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junaid Saleem</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+</head>
+
+<body class="bg-slate-900 text-slate-100">
+  <!-- Sidebar -->
+  <div
+    class="fixed top-0 left-0 h-screen w-16 bg-slate-800 flex flex-col items-center py-6 space-y-6 z-40 transition-all duration-300 transform -translate-x-full md:translate-x-0 shadow-lg "
+    id="sidebar">
+    <div
+      class="w-10 h-10 rounded-full overflow-hidden bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center mt-8 md:mt-0">
+      <span class="text-xl font-bold text-white">JS</span>
+    </div>
+    <ul class="flex flex-col items-center justify-center space-y-6 text-xl">
+      <li class="sidebar-icon"><a href="#home" class="hover:text-cyan-400 nav-link" title="Home"><i
+            class="fas fa-home"></i></a></li>
+      <li class="sidebar-icon"><a href="#about" class="hover:text-cyan-400 nav-link" title="About"><i
+            class="fas fa-user"></i></a></li>
+      <li class="sidebar-icon"><a href="#experience" class="hover:text-cyan-400 nav-link" title="Experience"><i
+            class="fas fa-briefcase"></i></a></li>
+      <li class="sidebar-icon"><a href="#education" class="hover:text-cyan-400 nav-link" title="Education"><i
+            class="fas fa-graduation-cap"></i></a></li>
+      <li class="sidebar-icon"><a href="#skills" class="hover:text-cyan-400 nav-link" title="Skills"><i
+            class="fas fa-code"></i></a></li>
+      <li class="sidebar-icon"><a href="#projects" class="hover:text-cyan-400 nav-link" title="Projects"><i
+            class="fas fa-laptop-code"></i></a></li>
+      <li class="sidebar-icon"><a href="#certifications" class="hover:text-cyan-400 nav-link" title="Certifications"><i
+            class="fas fa-certificate"></i></a></li>
+      <li class="sidebar-icon"><a href="#contact" class="hover:text-cyan-400 nav-link" title="Contact"><i
+            class="fas fa-envelope"></i></a></li>
+    </ul>
+    <button class="md:hidden absolute top-4 left-1/2 transform -translate-x-1/2 text-white text-xl" id="closeSidebar">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Sidebar Toggle -->
+  <button
+    class="fixed top-4 left-4 md:hidden bg-gradient-to-r from-cyan-400 to-blue-500 text-white p-2 rounded-full z-50 shadow-lg hover:shadow-xl transition-all duration-300"
+    id="openSidebar">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Content Wrapper -->
+  <main class="ml-0 md:ml-16 p-4 md:p-8 space-y-20" id="main-content">
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex flex-col justify-center py-10" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+          <div class="max-w-2xl text-center md:text-left w-full" data-aos="fade-right" data-aos-delay="200">
+            <p class="text-cyan-400 font-medium mb-2">Hello, I'm</p>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight typing-text">
+              <span class="gradient-text">Junaid Saleem</span>
+            </h1>
+            <h2 class="text-2xl sm:text-3xl font-medium mb-4 text-slate-300">
+              AI Developer
+            </h2>
+            <p class="text-base sm:text-lg mb-8 text-slate-400 max-w-lg mx-auto md:mx-0">
+              Passionate about building intelligent systems and innovative web solutions that solve real-world problems.
+            </p>
+
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
+              <a href="https://drive.google.com/file/d/1w5ogKHU1Rw8xuaX5D3CQNIYpoNxrlwqD/view?usp=drive_link" target="_blank"
+                class="gradient-btn text-white px-6 py-3 rounded-full font-medium flex items-center gap-2 shadow-lg">
+                <i class="fas fa-download"></i> Resume
+              </a>
+              <a href="#contact"
+                class="bg-transparent border-2 border-cyan-400 text-cyan-400 px-6 py-3 rounded-full font-medium flex items-center gap-2 hover:bg-cyan-400/10 transition-all duration-300">
+                <i class="fas fa-paper-plane"></i> Contact Me
+              </a>
+            </div>
+
+            <div class="flex justify-center md:justify-start gap-6 mt-4">
+              <a href="https://github.com/JunaidSalim" target="_blank"
+                class="text-2xl text-slate-400 hover:text-white transition-all duration-300 hover:-translate-y-1">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/junaid-saleem" target="_blank"
+                class="text-2xl text-slate-400 hover:text-white transition-all duration-300 hover:-translate-y-1">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:junaidsaleem986@gmail.com"
+                class="text-2xl text-slate-400 hover:text-white transition-all duration-300 hover:-translate-y-1">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="w-48 h-48 md:w-72 md:h-72 relative mb-8 md:mb-0 flex-shrink-0" data-aos="fade-left"
+            data-aos-delay="400">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full blur opacity-20 animate-pulse">
+            </div>
+            <div
+              class="relative w-full h-full rounded-full overflow-hidden border-4 border-cyan-400 shadow-lg shadow-cyan-400/20">
+              <img src="assets/Profile.jpg" alt="Junaid Saleem" class="w-full h-full object-cover object-center">
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-cyan-400 scroll-indicator hidden md:block cursor-pointer" id="scrollDown">
+          <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h6 class="text-cyan-400 font-medium mb-2">Get To Know</h6>
+          <h2 class="text-3xl md:text-4xl font-bold relative inline-block">
+            About Me
+            <span class="block h-1 w-20 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="hidden lg:block relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="w-64 h-64 md:w-80 md:h-80 mx-auto relative z-10">
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg transform rotate-6 opacity-20">
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg transform -rotate-6 opacity-20">
+              </div>
+              <div class="relative w-full h-full rounded-lg overflow-hidden border-4 border-slate-800 shadow-xl">
+                <img src="assets/About.jpg" alt="About Me" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-left" data-aos-delay="300">
+            <div class="bg-slate-800/50 p-6 rounded-lg shadow-lg border border-slate-700">
+              <p class="text-lg mb-6 text-slate-300 leading-relaxed">
+                I am a Computer Science junior at Ghulam Ishaq Khan Institute of Engineering Sciences and Technology,
+                currently exploring diverse domains within the field. My journey began with Front End Development and
+                has expanded into Machine Learning, Back End Development using Django, and Database Management. I have a
+                solid foundation in programming languages such as Python, C++, JavaScript, and SQL, and I continue to
+                strengthen my skills in these areas. I’ve also worked with frameworks and libraries like Pandas,
+                Scikit-learn, Django, and React, as well as databases like PostgreSQL. My familiarity with Ubuntu,
+                Windows, and MacOS, along with experience using Git for version control, supports my development
+                workflow.
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-cyan-400/20 flex items-center justify-center">
+                    <i class="fas fa-medal text-cyan-400"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Experience</h4>
+                    <p class="text-slate-400 text-sm">
+                      < 1 Year</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-full bg-cyan-400/20 flex items-center justify-center">
+                    <i class="fas fa-project-diagram text-cyan-400"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold">Projects</h4>
+                    <p class="text-slate-400 text-sm">10+ Completed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-slate-800/30" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h6 class="text-cyan-400 font-medium mb-2">Professional Journey</h6>
+          <h2 class="text-3xl md:text-4xl font-bold relative inline-block">
+            Experience
+            <span class="block h-1 w-20 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></span>
+          </h2>
+        </div>
+
+        <div
+          class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-cyan-400 before:to-blue-500 before:via-slate-400">
+          <!-- Experience Item 1 -->
+          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+            data-aos="fade-up">
+            <div
+              class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-900 text-cyan-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+              <i class="fas fa-briefcase"></i>
+            </div>
+
+            <div
+              class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-800 p-6 rounded-lg shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 border border-slate-700"
+              data-aos="fade-right" data-aos-delay="100">
+              <div class="flex items-center justify-between space-x-2 mb-1">
+                <h3 class="text-xl font-semibold text-white">Web Development - Django Intern</h3>
+                <span
+                  class="text-xs font-semibold text-cyan-400 uppercase bg-cyan-400/10 px-2 py-1 rounded">Remote</span>
+              </div>
+              <div class="text-cyan-300 mb-2">Tiers Limited</div>
+              <time class="text-xs text-slate-400 mb-3 block">June 2024 - Aug 2024</time>
+              <ul class="text-slate-300 space-y-2 ml-4 list-disc">
+                During this internship, I:
+                <li>Started with a focus on Python and Django, gradually expanding my skill set to include React and
+                  Django REST Framework.
+                </li>
+                <li>Build a full-stack application for my final project using React, Django, Django REST Framework, and
+                  PostgreSQL.
+                </li>
+                <li>Deepen my technical expertise in backend development and full-stack application design.</li>
+                <li>Enhance my proficiency in remote collaboration and effectively managing project workflows in
+                  distributed teams.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
+            data-aos="fade-up">
+            <div
+              class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-900 text-cyan-400 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+              <i class="fas fa-briefcase"></i>
+            </div>
+
+            <div
+              class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-slate-800 p-6 rounded-lg shadow-lg hover:shadow-cyan-500/10 transition-all duration-300 border border-slate-700"
+              data-aos="fade-left" data-aos-delay="200">
+              <div class="flex items-center justify-between space-x-2 mb-1">
+                <h3 class="text-xl font-semibold text-white">Backend Development - Django Fellow</h3>
+                <span
+                  class="text-xs font-semibold text-cyan-400 uppercase bg-cyan-400/10 px-2 py-1 rounded">Remote</span>
+              </div>
+              <div class="text-cyan-300 mb-2">Bytewise Limited</div>
+              <time class="text-xs text-slate-400 mb-3 block">June 2024 - August 2024</time>
+              <ul class="text-slate-300 space-y-2 ml-4 list-disc">
+                I completed this 3-month Backend Development Fellowship with a focus on Django, where I honed my
+                technical skills and deepened my understanding of backend frameworks. During this program, I:
+                <li>Enhanced my expertise in Django and improved my ability to collaborate remotely on complex projects.
+                </li>
+                <li>Was recognized as the Best Fellow for the Django Track for my technical proficiency, active
+                  participation, and dedication.</li>
+                <li>Gained hands-on experience with key features like unit testing and Django REST Framework.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h6 class="text-cyan-400 font-medium mb-2">Academic Background</h6>
+          <h2 class="text-3xl md:text-4xl font-bold relative inline-block">
+            Education
+            <span class="block h-1 w-20 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></span>
+          </h2>
+        </div>
+
+        <div class="bg-slate-800/50 p-8 rounded-lg shadow-lg border border-slate-700" data-aos="zoom-in"
+          data-aos-delay="100">
+          <div class="flex flex-col md:flex-row md:items-center gap-6">
+            <div class="md:w-1/4 flex justify-center">
+              <div class="w-24 h-24 rounded-full bg-slate-700 flex items-center justify-center">
+                <i class="fas fa-university text-4xl text-cyan-400"></i>
+              </div>
+            </div>
+            <div class="md:w-3/4">
+              <h3 class="text-2xl font-bold mb-2 text-white">BS Computer Science</h3>
+              <h4 class="text-lg text-cyan-300 mb-4">Ghulam Ishaq Khan Institute of Engineering Sciences and Technology
+                (GIKI)</h4>
+              <div class="flex items-center gap-4 mb-4">
+                <div class="bg-cyan-400/10 px-3 py-1 rounded-full text-cyan-400 text-sm font-medium">
+                  <i class="far fa-calendar-alt mr-1"></i> 2022 - 2026 (Expected)
+                </div>
+                <div class="bg-cyan-400/10 px-3 py-1 rounded-full text-cyan-400 text-sm font-medium">
+                  <i class="fas fa-star mr-1"></i> CGPA: 3.69/4.0
+                </div>
+              </div>
+              <p class="text-slate-300">
+                My time at GIKI has been a period of significant academic and personal growth. Immersed in a rigorous
+                and collaborative environment, I have developed a strong foundation in computer science while actively
+                engaging in technical societies such as ACM-GIKI and Team Techno. These experiences have enhanced my
+                skills in problem-solving, teamwork, and leadership.
+              </p>
+              <div class="mt-4">
+                <h5 class="font-semibold mb-2">Relevant Coursework:</h5>
+                <div class="flex flex-wrap gap-2">
+                  <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Object Oriented Programming</span>
+                  <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Data Structures & Algorithms</span>
+                  <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Artificial Intelligence</span>
+                  <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                  <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Software Engineering</span>
+                  <span class="bg-slate-700 px-3 py-1 rounded-full text-sm">Linear Algebra and Calculus</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-slate-800/30" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h6 class="text-cyan-400 font-medium mb-2">What I Bring to the Table</h6>
+          <h2 class="text-3xl md:text-4xl font-bold relative inline-block">
+            Skills & Expertise
+            <span class="block h-1 w-20 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Skill Category 1 -->
+          <div
+            class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700 hover:shadow-cyan-500/10 transition-all duration-300"
+            data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center mb-6">
+              <i class="fas fa-code text-xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+            <div class="grid grid-cols-2 gap-3">
+
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fas fa-code text-cyan-400 text-lg"></i>
+                <span>C/C++</span>
+              </div>
+
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fab fa-python text-cyan-400 text-lg"></i>
+                <span>Python</span>
+              </div>
+
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fab fa-js text-cyan-400 text-lg"></i>
+                <span>JavaScript</span>
+              </div>
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fas fa-database text-cyan-400 text-lg"></i>
+                <span>SQL</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div
+            class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700 hover:shadow-cyan-500/10 transition-all duration-300"
+            data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center mb-6">
+              <i class="fas fa-laptop-code text-xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fab fa-html5 text-cyan-400 text-lg"></i>
+                <span>HTML</span>
+              </div>
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fab fa-css3-alt text-cyan-400 text-lg"></i>
+                <span>TailwindCSS</span>
+              </div>
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fab fa-react text-cyan-400 text-lg"></i>
+                <span>React</span>
+              </div>
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fab fa-python text-cyan-400 text-lg"></i>
+                <span>Django</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div
+            class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700 hover:shadow-cyan-500/10 transition-all duration-300"
+            data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center mb-6">
+              <i class="fas fa-brain text-xl text-white"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-4">AI & Data Science</h3>
+            <div class="grid grid-cols-2 gap-3">
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fas fa-robot text-cyan-400 text-lg"></i>
+                <span>Machine Learning</span>
+              </div>
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fas fa-brain text-cyan-400 text-lg"></i>
+                <span>Deep Learning</span>
+              </div>
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fas fa-fire text-cyan-400 text-lg"></i>
+                <span>Scikit-learn</span>
+              </div>
+              <div
+                class="bg-slate-700/50 rounded-lg p-3 flex items-center gap-2 hover:bg-slate-700 transition-all duration-300">
+                <i class="fas fa-cubes text-cyan-400 text-lg"></i>
+                <span>Tensorflow</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Tools Grid -->
+          <div class="lg:col-span-3 mt-4" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="text-xl font-semibold mb-6">Additional Tools & Technologies</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              <div class="bg-slate-700 p-3 rounded-lg text-center hover:bg-slate-600 transition-all duration-300">
+                <i class="fab fa-git-alt text-2xl mb-2 text-cyan-400"></i>
+                <p class="text-sm">Git & GitHub</p>
+              </div>
+
+              <div class="bg-slate-700 p-3 rounded-lg text-center hover:bg-slate-600 transition-all duration-300">
+                <i class="fas fa-database text-2xl mb-2 text-cyan-400"></i>
+                <p class="text-sm">PostgreSQL</p>
+              </div>
+              <div class="bg-slate-700 p-3 rounded-lg text-center hover:bg-slate-600 transition-all duration-300">
+                <i class="fas fa-server text-2xl mb-2 text-cyan-400"></i>
+                <p class="text-sm">REST API</p>
+              </div>
+              <div class="bg-slate-700 p-3 rounded-lg text-center hover:bg-slate-600 transition-all duration-300">
+                <i class="fab fa-figma text-2xl mb-2 text-cyan-400"></i>
+                <p class="text-sm">Figma</p>
+              </div>
+              <div class="bg-slate-700 p-3 rounded-lg text-center hover:bg-slate-600 transition-all duration-300">
+                <i class="fas fa-terminal text-2xl mb-2 text-cyan-400"></i>
+                <p class="text-sm">Bash/Shell</p>
+              </div>
+              <div class="bg-slate-700 p-3 rounded-lg text-center hover:bg-slate-600 transition-all duration-300">
+                <i class="fab fa-docker text-2xl mb-2 text-cyan-400"></i>
+                <p class="text-sm">Docker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h6 class="text-cyan-400 font-medium mb-2">Recent Work</h6>
+          <h2 class="text-3xl md:text-4xl font-bold relative inline-block">
+            Projects
+            <span class="block h-1 w-20 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></span>
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap justify-center mb-8 gap-3" data-aos="fade-up">
+          <button
+            class="project-filter px-6 py-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-medium hover:shadow-lg transition-all duration-300"
+            data-filter="all">All</button>
+          <button
+            class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
+            data-filter="ai">AI</button>
+          <button
+            class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
+            data-filter="web">Web</button>
+          <button
+            class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
+            data-filter="cpp">C++</button>
+          <button
+            class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
+            data-filter="repos">Repositories</button>
+        </div>
+
+        <div class="swiper project-swiper mt-8" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide project-card" data-category="ai">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-robot text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">ML Model Selection</h3>
+                  <p class="text-slate-400 mb-4">A user-friendly web application that simplifies regression and
+                    classification model selection with an intuitive, no-code interface for data preprocessing and
+                    performance evaluation.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Python</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Machine Learning</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Streamlit</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/ML_Model_Selection" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                    <a href="https://mlmodelselection.streamlit.app/" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="web">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-bus text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">GIKI Bus Ticket Reservation System</h3>
+                  <p class="text-slate-400 mb-4">Developed as part of our Database Management Systems (DBMS) course,
+                    this project offers a digital solution to the bus ticket reservation challenges faced by GIKI
+                    students. Replacing the inefficient manual system, it features a user-friendly interface for
+                    students to book tickets and an admin panel for managing records. The system applies core DBMS
+                    principles to ensure efficient, reliable, and organized data handling.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">HTML</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Tailwind CSS</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Django</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/GIKI_Bus_Ticket_Reservation_System" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                    <a href="https://transport.giki.edu.pk:8035/" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="ai">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-brain text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Machine Learning A-Z</h3>
+                  <p class="text-slate-400 mb-4">This repository features Python implementations of a wide range of
+                    machine learning models that I explored during the Machine Learning A-Z course. The models cover
+                    Regression, Classification, Clustering, Reinforcement Learning, Association Rule Learning, Natural
+                    Language Processing (NLP), as well as Artificial Neural Networks (ANN) and Convolutional Neural
+                    Networks (CNN).</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Python</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Machine Learning</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Scikit-learn</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Tensorflow</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/Machine_Learning_A-Z" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="web">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-pencil-square text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Blog App</h3>
+                  <p class="text-slate-400 mb-4">A dynamic web application for effortless blog creation, management, and
+                    interaction, featuring a React frontend and Django backend.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">React</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Django</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Django REST Framework</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/BlogApp" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="web">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-comments text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">DiscussMate</h3>
+                  <p class="text-slate-400 mb-4">It is a real-time chat application developed using Django that enables
+                    users to engage in topic-based discussions within dedicated chat rooms.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">HTML</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Django</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Django REST Framework</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/DiscussMate" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="web">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-chart-line text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Expense Tracker</h3>
+                  <p class="text-slate-400 mb-4">This project is a responsive web-based Expense Tracker developed using
+                    Django and Tailwind CSS. It allows users to manage and track their incomes and expenses with
+                    features like user authentication, CRUD operations, and data export in PDF, CSV, and Excel formats.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">HTML</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Tailwind CSS</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Django</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/ExpenseTracker" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="repos">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-microchip text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Robotics</h3>
+                  <p class="text-slate-400 mb-4">This repository contains all the Arduino programs I've written as part
+                    of my work with Team Techno and other personal projects. It showcases various robotics, automation,
+                    and sensor integration projects, including line-following robots, motor control, and more.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Arduino</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Robotics</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/Robotics" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-terminal text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Lexical Analyzer</h3>
+                  <p class="text-slate-400 mb-4">It is a Formal Languages and Automata Theory project featuring a
+                    lexical analyzer for C++ that tokenizes C++ programs into meaningful tokens. The analyzer
+                    demonstrates the practical application of lexical analysis by identifying keywords, operators,
+                    identifiers, and other language constructs.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Autmoata Theory</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Flex</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/Lexical_Analyzer" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="repos">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-code text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">LeetCode Solutions</h3>
+                  <p class="text-slate-400 mb-4">This repository is a collection of solutions to a variety of LeetCode
+                    problems, aimed at strengthening problem-solving skills and understanding of data structures and
+                    algorithms.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Python</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">SQL</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">JavaScript</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/LeetCode_Solutions" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-chess-board text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Checkers</h3>
+                  <p class="text-slate-400 mb-4">It is a checkers game developed in C++ that simulates the classic
+                    two-player board game on an 8x8 grid. The game follows standard checkers rules and is implemented
+                    using object-oriented programming principles.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Game Development</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/Checkers" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="repos">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-chart-bar text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">ChartJS</h3>
+                  <p class="text-slate-400 mb-4">A repository I maintained while teaching JavaScript concepts and
+                    building interactive data visualizations using Chart.js, featuring hands-on code examples and
+                    detailed Markdown explanations.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">JavaScipt</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">ChartJS</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Data Visualization</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/ChartJS" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-project-diagram text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Clustering</h3>
+                  <p class="text-slate-400 mb-4">A C++ program that extracts clusters from a graph based on threshold
+                    density and CP (clustering property) values, demonstrating graph analysis and clustering techniques.
+                  </p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Clustering</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Data Structures & Algorithms</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/Clustering" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-user-check text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Data Profiling & Cleaning</h3>
+                  <p class="text-slate-400 mb-4">A C++ project developed for an Object-Oriented Programming course that
+                    profiles and cleanses student data by identifying anomalies and generating useful statistics using
+                    data profiling and validation techniques.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Statistics</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Data Cleaning</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Object-Oriented Programming</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/Data_Profiling_and_Cleaning" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-comment-dots text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Word Predicter</h3>
+                  <p class="text-slate-400 mb-4">A C++ program that recommends new words to the user based on the
+                    frequency of previously entered words, demonstrating basic predictive text functionality.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Statistics</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Data Cleaning</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Object-Oriented Programming</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/Word_Predicter" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-chart-area text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Implementation of Central Limit Theorem</h3>
+                  <p class="text-slate-400 mb-4">This repository contains C++ implementation of the Central Limit
+                    Theorem that calculates mean, standard deviation, and sample mean, generates random samples, and
+                    computes Z-values to demonstrate statistical convergence.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Statistics</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/JunaidSalim/Implementation_of_Central_Limit_Theorem" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination mt-8"></div>
+          <div class="swiper-button-next text-cyan-400"></div>
+          <div class="swiper-button-prev text-cyan-400"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-16 bg-slate-800/30" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h6 class="text-cyan-400 font-medium mb-2">Learning Journey</h6>
+          <h2 class="text-3xl md:text-4xl font-bold relative inline-block">
+            Certifications
+            <span class="block h-1 w-20 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Certification 1 -->
+          <div
+            class="bg-slate-800 rounded-lg p-6 shadow-lg border border-slate-700 hover:shadow-cyan-500/10 transition-all duration-300"
+            data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-4 text-cyan-400 text-4xl">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Machine Learning A-Z: AI & Python</h3>
+            <p class="text-slate-400 mb-4">Udemy (Kirill & Hadelin)</p>
+            <div class="flex items-center gap-2 text-sm text-slate-300">
+              <i class="fas fa-calendar-alt text-cyan-400"></i>
+              <span>August 2024</span>
+            </div>
+            <a href="https://www.udemy.com/certificate/UC-fd154b0b-1ef0-4899-83f6-2ecea2dafbf7/" target="_blank"
+              class="mt-4 inline-block text-cyan-400 hover:text-white transition-colors">
+              <i class="fas fa-external-link-alt mr-1"></i> View Credential
+            </a>
+          </div>
+
+          <!-- Certification 2 -->
+          <div
+            class="bg-slate-800 rounded-lg p-6 shadow-lg border border-slate-700 hover:shadow-cyan-500/10 transition-all duration-300"
+            data-aos="fade-up" data-aos-delay="200">
+            <div class="mb-4 text-cyan-400 text-4xl">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">IBM Applied AI Specialization</h3>
+            <p class="text-slate-400 mb-4">Coursera (IBM)</p>
+            <div class="flex items-center gap-2 text-sm text-slate-300">
+              <i class="fas fa-calendar-alt text-cyan-400"></i>
+              <span>October 2023</span>
+            </div>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/J9QNKFY5PQCX" target="_blank"
+              class="mt-4 inline-block text-cyan-400 hover:text-white transition-colors">
+              <i class="fas fa-external-link-alt mr-1"></i> View Credential
+            </a>
+          </div>
+
+          <!-- Certification 3 -->
+          <div
+            class="bg-slate-800 rounded-lg p-6 shadow-lg border border-slate-700 hover:shadow-cyan-500/10 transition-all duration-300"
+            data-aos="fade-up" data-aos-delay="300">
+            <div class="mb-4 text-cyan-400 text-4xl">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">META Front-End Developer Specialization</h3>
+            <p class="text-slate-400 mb-4">Coursera (META)</p>
+            <div class="flex items-center gap-2 text-sm text-slate-300">
+              <i class="fas fa-calendar-alt text-cyan-400"></i>
+              <span>August 2023</span>
+            </div>
+            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/XD9Y8P8ERUP7"
+              target="_blank" class="mt-4 inline-block text-cyan-400 hover:text-white transition-colors">
+              <i class="fas fa-external-link-alt mr-1"></i> View Credential
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h6 class="text-cyan-400 font-medium mb-2">Get In Touch</h6>
+          <h2 class="text-3xl md:text-4xl font-bold relative inline-block">
+            Contact Me
+            <span class="block h-1 w-20 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mt-2"></span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="space-y-8" data-aos="fade-right" data-aos-delay="100">
+            <h3 class="text-2xl font-semibold">Let's Talk</h3>
+            <p class="text-slate-300">
+              Feel free to reach out if you're looking for a developer, have a question, or just want to connect.
+            </p>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-cyan-400/20 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-map-marker-alt text-cyan-400"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Location</h4>
+                <p class="text-slate-300">Peshawar, Pakistan</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-cyan-400/20 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-phone text-cyan-400"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Phone</h4>
+                <a href="tel:+923129172270" class="text-cyan-400 hover:underline">+92 312 9172270</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-cyan-400/20 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-envelope text-cyan-400"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Email</h4>
+                <a href="mailto:junaidsaleem986@gmail.com"
+                  class="text-cyan-400 hover:underline">junaidsaleem986@gmail.com</a>
+              </div>
+            </div>
+
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-cyan-400/20 flex items-center justify-center flex-shrink-0">
+                <i class="fab fa-linkedin text-cyan-400"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">LinkedIn</h4>
+                <a href="https://linkedin.com/in/junaid-saleem" target="_blank"
+                  class="text-cyan-400 hover:underline">linkedin.com/in/junaid-saleem</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-cyan-400/20 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-briefcase text-cyan-400"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Upwork</h4>
+                <a href="https://www.upwork.com/freelancers/~01205cd28478cb9efe" target="_blank"
+                  class="text-cyan-400 hover:underline">Junaid Saleem</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-full bg-cyan-400/20 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-handshake text-cyan-400"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Fiverr</h4>
+                <a href="https://www.fiverr.com/s/Ld8ZwQY" target="_blank"
+                  class="text-cyan-400 hover:underline">@junaidsaleem207</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700" data-aos="fade-left"
+            data-aos-delay="200">
+            <h3 class="text-2xl font-semibold mb-6">Send a Message</h3>
+
+            <form id="contactForm" action="https://formspree.io/f/xkgjyjvj" method="POST">
+              <div class="mb-4">
+                <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                <input type="text" id="name" name="name" required
+                  class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                <input type="email" id="email" name="email" required
+                  class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400">
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                <textarea id="message" name="message" rows="5" required
+                  class="w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+              </div>
+              <button type="submit" class="w-full gradient-btn text-white py-3 px-4 rounded-lg font-medium">
+                <span id="submitText">Send Message</span>
+                <span id="loadingSpinner" class="hidden">
+                  <i class="fas fa-spinner fa-spin mr-2"></i> Sending...
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 py-8 mt-16" data-aos="fade-up">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="flex justify-center gap-6 mb-6">
+          <a href="https://github.com/JunaidSalim" target="_blank"
+            class="text-xl text-slate-400 hover:text-cyan-400 transition-all duration-300">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/junaid-saleem" target="_blank"
+            class="text-xl text-slate-400 hover:text-cyan-400 transition-all duration-300">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:junaidsaleem986@gmail.com"
+            class="text-xl text-slate-400 hover:text-cyan-400 transition-all duration-300">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <p class="text-slate-400">© <span id="copyright-year">2025</span> Junaid Saleem. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
