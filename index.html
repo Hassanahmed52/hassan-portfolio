@@ -468,7 +468,7 @@
 
 
 
-        <!-- <div class="flex flex-wrap justify-center mb-8 gap-3" data-aos="fade-up">
+        <div class="flex flex-wrap justify-center mb-8 gap-3" data-aos="fade-up">
           <button
             class="project-filter px-6 py-2 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-medium hover:shadow-lg transition-all duration-300"
             data-filter="all">All</button>
@@ -478,18 +478,21 @@
           <button
             class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
             data-filter="web">Web</button>
+          <!-- <button
+            class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
+            data-filter="cpp">C++</button> -->
           <button
             class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
-            data-filter="cpp">C++</button>
+            data-filter="DevOps">DevOps</button>
           <button
             class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
-            data-filter="repos">Repositories</button>
-        </div> -->
+            data-filter="data">Data Engineering</button>
+        </div>
 
         <div class="swiper project-swiper mt-8" data-aos="fade-up" data-aos-delay="200">
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide project-card" data-category="ai">
+            <div class="swiper-slide project-card" data-category="web">
               <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
                 <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
                   <i class="fas fa-robot text-5xl text-cyan-400"></i>
@@ -553,34 +556,9 @@
 
 
 
-            
 
-            <div class="swiper-slide project-card" data-category="ai">
-              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
-                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
-                  <i class="fas fa-brain text-5xl text-cyan-400"></i>
-                </div>
-                <div class="p-6">
-                  <h3 class="text-xl font-semibold mb-2">GIKOKO
-                    <p class="text-slate-400 mb-4">Developed a Flask-based peer-to-peer connectivity platform designed
-                      for seamless institutional networking and resource sharing. Integrated optimized PostgreSQL
-                      indexing and AJAX for low-latency messaging and search, alongside Microsoft Graph API to automate
-                      institutional notifications.</p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                      <span class="bg-slate-700 px-2 py-1 rounded text-xs">FlasK</span>
-                      <span class="bg-slate-700 px-2 py-1 rounded text-xs">PostgreSQL</span>
-                      <span class="bg-slate-700 px-2 py-1 rounded text-xs">Bootstrap</span>
-                      <span class="bg-slate-700 px-2 py-1 rounded text-xs">AJAX</span>
-                    </div>
-                    <div class="flex justify-between pt-2 border-t border-slate-700">
-                      <a href="https://github.com/Hassanahmed52/GIKOKO" target="_blank"
-                        class="text-cyan-400 hover:text-white transition-colors">
-                        <i class="fab fa-github mr-1"></i> Code
-                      </a>
-                    </div>
-                </div>
-              </div>
-            </div>
+
+
 
             <div class="swiper-slide project-card" data-category="web">
               <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
@@ -619,12 +597,148 @@
 
 
 
+            <div class="swiper-slide project-card" data-category="data">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-chart-line text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Hybrid Data Engineering Pipeline</h3>
+                  <p class="text-slate-400 mb-4">A hybrid batch and streaming data pipeline built for real-time
+                    e-commerce analytics. The system loads 15,000+ historical transactions in bulk, while simultaneously
+                    streaming live transactions through Apache Kafka. Both data sources are processed using Apache Spark
+                    Structured Streaming, applying a 2-minute tumbling window with watermarking to aggregate revenue by
+                    category, reducing database write volume by roughly 98%. Aggregated results are persisted in
+                    PostgreSQL and visualized on an auto-refreshing Streamlit dashboard showing live KPIs, revenue
+                    trends, and category performance, with the full infrastructure (Kafka, Zookeeper, PostgreSQL)
+                    containerized via Docker Compose.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Python</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Apache Kafka</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Apache Spark</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">PostgreSQL</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Streamlit</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Docker</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/hybrid-data-engineering-pipeline" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="DevOps">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-list-check text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+                  <p class="text-slate-400 mb-4">A full-stack task management application with a Flask REST API, React
+                    frontend, and MariaDB database, supporting complete task CRUD operations. The entire stack is
+                    containerized with Docker Compose, with infrastructure (EC2, ECR, IAM) provisioned on AWS via
+                    Terraform. A GitHub Actions CI/CD pipeline automates image builds, pushes to ECR, and deployment to
+                    EC2 on every push to main, with a healthcheck-based service dependency to eliminate startup race
+                    conditions between the database and backend.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Python</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Flask</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">React</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Docker</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Terraform</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">AWS</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/task-manager-app-terraform-cicd" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="swiper-slide project-card" data-category="ai">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-robot text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">LLM-Powered Codebase Issue Resolver</h3>
+                  <p class="text-slate-400 mb-4">An intelligent developer tool built to automate repository
+                    troubleshooting and error resolution. The system clones GitHub repositories, parses source code, and
+                    utilizes an optimized semantic chunking strategy to map functions and classes into a Qdrant vector
+                    database. Leverages Google Gemini and Groq SDK to process similarity-search context and generate
+                    accurate, context-aware bug fixes while eliminating LLM hallucinations. Built with an asynchronous
+                    task architecture to decouple heavy cloning workflows, containerized via Docker, and deployed using
+                    Railway and Firebase.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Node.js</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Express</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Qdrant</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Gemini API</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Docker</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Railway</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/LLM-powered-code-issue-resolver" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                    <a href="https://llm-code-resolver.web.app/" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="swiper-slide project-card" data-category="web">
+            <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+              <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                <i class="fas fa-brain text-5xl text-cyan-400"></i>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">GIKOKO
+                  <p class="text-slate-400 mb-4">Developed a Flask-based peer-to-peer connectivity platform designed
+                    for seamless institutional networking and resource sharing. Integrated optimized PostgreSQL
+                    indexing and AJAX for low-latency messaging and search, alongside Microsoft Graph API to automate
+                    institutional notifications.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">FlasK</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">PostgreSQL</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Bootstrap</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">AJAX</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/GIKOKO" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
 
 
 
 
 
-            <!-- <div class="swiper-slide project-card" data-category="web">
+
+
+
+
+          <!-- <div class="swiper-slide project-card" data-category="web">
               <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
                 <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
                   <i class="fas fa-comments text-5xl text-cyan-400"></i>
@@ -900,11 +1014,11 @@
               </div>
             </div> -->
 
-          </div>
-          <div class="swiper-pagination mt-8"></div>
-          <div class="swiper-button-next text-cyan-400"></div>
-          <div class="swiper-button-prev text-cyan-400"></div>
         </div>
+        <div class="swiper-pagination mt-8"></div>
+        <div class="swiper-button-next text-cyan-400"></div>
+        <div class="swiper-button-prev text-cyan-400"></div>
+      </div>
       </div>
     </section>
 
@@ -917,7 +1031,7 @@
 
 
 
-    
+
     <!-- Contact Section -->
     <section id="contact" class="py-16" data-aos="fade-up">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
