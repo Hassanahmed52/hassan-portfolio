@@ -478,9 +478,9 @@
           <button
             class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
             data-filter="web">Web</button>
-          <!-- <button
+          <button
             class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
-            data-filter="cpp">C++</button> -->
+            data-filter="cpp">C++</button>
           <button
             class="project-filter px-6 py-2 rounded-full bg-slate-700 text-white font-medium hover:shadow-lg transition-all duration-300"
             data-filter="DevOps">DevOps</button>
@@ -729,6 +729,228 @@
                 </div>
               </div>
             </div>
+
+            <!-- ===== Newly added projects ===== -->
+
+            <div class="swiper-slide project-card" data-category="DevOps">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-cart-shopping text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Premium Shopping Cart – CI/CD Pipeline</h3>
+                  <p class="text-slate-400 mb-4">A production-ready full-stack shopping cart (React + Express) with a
+                    complete DevOps pipeline: multi-stage Dockerized builds, Docker Compose orchestration, and
+                    GitHub Actions workflows that test, build, and deploy to testing/staging environments with
+                    optional AWS ECR/EC2 provisioning.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">React</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Express</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Docker</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">GitHub Actions</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">AWS</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/CI-CD-Pipeline" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="ai">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-phone-volume text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">VoiceAgent – AI Cold Calling Agent</h3>
+                  <p class="text-slate-400 mb-4">A real-time AI voice agent ("Alex") that pitches, handles objections,
+                    and closes sales calls over a WebSocket pipeline (mic → Groq Whisper STT → Groq LLM → gTTS).
+                    Includes outcome classification, hallucination-resistant call-ending guards, and login-free call
+                    history persisted in MongoDB.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Python</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">FastAPI</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Groq LLM</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">WebSockets</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">MongoDB</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/VoiceAgent" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                    <a href="https://voiceagent-sl69.onrender.com" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="ai">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-hand text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">GestureVision</h3>
+                  <p class="text-slate-400 mb-4">A real-time hand gesture recognition system using OpenCV and
+                    MediaPipe that classifies 18 static gestures, counts fingers 0–10 across two hands, and detects
+                    dynamic wave/swipe motions via wrist trajectory analysis — running at 30+ FPS on CPU with no GPU
+                    required.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Python</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">OpenCV</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">MediaPipe</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">NumPy</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/GestureVision" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="ai">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-newspaper text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Autonomous News Fact-Checker</h3>
+                  <p class="text-slate-400 mb-4">An autonomous n8n research agent that verifies news headlines using
+                    live SerpAPI web searches and Gemini 2.0 reasoning, returning a verdict (true/false/misleading)
+                    with key findings, all logged to a PostgreSQL database and orchestrated via Docker.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">n8n</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Gemini 2.0</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">SerpAPI</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">PostgreSQL</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Docker</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/Autonomous-News-Fact-Checker" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-microchip text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">C-Mini Compiler</h3>
+                  <p class="text-slate-400 mb-4">A complete compiler for a simplified C-like language, built for a
+                    Compiler Construction course. Implements the full pipeline — lexing (Flex), parsing (Bison), AST
+                    construction, semantic analysis, three-address IR generation, constant-folding/dead-code
+                    optimizations, and x86-64 NASM code generation.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Flex</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Bison</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">x86-64 / NASM</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/c-mini-compiler" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-quote-right text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">CustomString Core</h3>
+                  <p class="text-slate-400 mb-4">A lightweight, high-performance custom C++ string class built as a
+                    drop-in replacement for basic string handling — manual heap memory management, Rule-of-Three
+                    compliance, and overloaded operators for concatenation, indexing, comparison, substring slicing,
+                    and stream I/O, all without relying on std::string.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Memory Management</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Operator Overloading</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/CustomString-Core" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-chess-board text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Checkers – OOP Board Game</h3>
+                  <p class="text-slate-400 mb-4">A text-based two-player Checkers game built in pure C++ with zero
+                    external dependencies, enforcing standard rules including diagonal movement, multi-jump captures
+                    with mid-sequence direction changes, and king promotion on reaching the back row.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">OOP</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">CLI</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/Object-Oriented-C-Checkers-Game" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide project-card" data-category="cpp">
+              <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg border border-slate-700 h-full">
+                <div class="h-48 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
+                  <i class="fas fa-person-military-pointing text-5xl text-cyan-400"></i>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2">Hang The Man Game</h3>
+                  <p class="text-slate-400 mb-4">A console-based Hangman-style game in C++ where the computer picks a
+                    random country/city and the player guesses letters to reveal it, with no character repeats
+                    allowed and a maximum of 11 mistakes before the game ends — built without any built-in string
+                    processing functions.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">C++</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">CLI</span>
+                    <span class="bg-slate-700 px-2 py-1 rounded text-xs">Game Logic</span>
+                  </div>
+                  <div class="flex justify-between pt-2 border-t border-slate-700">
+                    <a href="https://github.com/Hassanahmed52/Hang-The-Man-Game" target="_blank"
+                      class="text-cyan-400 hover:text-white transition-colors">
+                      <i class="fab fa-github mr-1"></i> Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ===== End of newly added projects ===== -->
 
           </div>
 
